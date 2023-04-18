@@ -1,0 +1,38 @@
+#productscontainer{
+    margin: 10px 0;
+}
+
+.product:hover{
+    transition: 0.2s;
+    transform: scale(1.01);
+}
+
+.productImage{
+    margin: 5%;
+    width: 90%;
+    height: 15rem;
+}
+.productImage:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbutton{
+    margin: 20px;
+}
+
+.pagenumber p{
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.label{
+    font-weight: 900;
+}
+

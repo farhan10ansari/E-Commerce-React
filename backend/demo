@@ -1,0 +1,78 @@
+<div class="container-fluid">
+        <div class="row row-cols-lg-5" id="productscontainer"> 
+            <% for(let i=((pagenumber-1)*5);i<((pagenumber-1)*5)+5 && i<products.length ; i++) {%>
+                <%- include('partial/product', {productname: products[i].productname,price:products[i].price,details:products[i].details,image:products[i].image,id:products[i].id}); %>
+
+                <% } %>
+        </div>
+        <div class="buttons">
+            <% if(pagenumber>1){ %>
+            <div><a href="/prevpage"><button class="btn bg-primary navbutton">Prev</button></a></div>
+            <% } %>
+            <% if(pagenumber<products.length/5){ %>
+            <div><a href="/nextpage"><button class="btn bg-primary navbutton">Next</button></a></div>
+            <% } %>
+        </div>
+        <div class="pagenumber">
+            <p>Page Number: <%= pagenumber %></p>
+        </div> 
+    </div>
+
+
+
+
+
+//seller
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row row-cols-lg-5" id="productscontainer"> 
+            <% for(let i=((pagenumber-1)*5);i<((pagenumber-1)*5)+5 && i<products.length ; i++) {%>
+                <%- include('partial/product', {productname: products[i].productname,price:products[i].price,details:products[i].details,image:products[i].image,id:products[i].id}); %>
+
+                <% } %>
+        </div>
+        <div class="buttons">
+            <% if(pagenumber>1){ %>
+            <div><a href="/prevpage"><button class="btn bg-primary navbutton">Prev</button></a></div>
+            <% } %>
+            <% if(pagenumber<products.length/5){ %>
+            <div><a href="/nextpage"><button class="btn bg-primary navbutton">Next</button></a></div>
+            <% } %>
+        </div>
+        <div class="pagenumber">
+            <p>Page Number: <%= pagenumber %></p>
+        </div> 
+    </div>
+
+
+
+
+
+
+
+    <div class="col product" id="<%= product.product_id %>">
+        <div class="card" style="width: 15rem;">
+            <img src="<%= product.image %>" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <%= product.product_name %>
+                </h4>
+                <h3 class="card-text font-weight-bold">₹<%= product.price %>
+                </h3>
+                <p class="card-text detailhide">
+                    <%= product.details %>
+                </p>
+    
+                <a class="popup btn btn-primary detailsbutton">Show Details
+                    <span class="popuptext" id="myPopup">
+                        <%= product.details %>
+                    </span>
+                </a>
+                <a class="btn btn-danger mt-3 addCartButton">Add to Cart</a>
+            </div>
+        </div>
+    </div>

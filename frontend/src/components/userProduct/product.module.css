@@ -1,0 +1,42 @@
+
+.imageContainer{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+.image{
+    margin: 5%;
+    width: 90%;
+    height: 15rem;
+}
+
+.image:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.faded{
+    opacity: 0.4;
+}
+.none{
+    opacity: 1;
+}
+
+.message{
+    height:15px;
+    color:rgb(243, 126, 126);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product:hover{
+    transition: 0.2s;
+    transform: scale(1.02);
+}

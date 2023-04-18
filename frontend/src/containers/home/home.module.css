@@ -1,0 +1,17 @@
+.pagenumber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pagenumber p{
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

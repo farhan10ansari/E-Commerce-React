@@ -1,0 +1,44 @@
+.formcontainer{
+    /* background-color: #8080806d; */
+    background-color: #343a40;
+    margin: 40px 5px;
+    padding: 40px 10px;
+    border-radius: 30px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    /* border: 2px solid black; */
+    /* box-shadow: 10px 10px 20px 3px ; */
+}
+.input{
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+.input:hover{
+    outline: 2px solid #2874f0;
+    box-shadow: 1px 1px 2px 2px;
+}
+
+.input:focus{
+    outline: 2px solid #2874f0;
+    box-shadow: 1px 1px 2px 2px;
+}
+#loginform,#signupform,#addproductform,#changePasswordForm,#resetPasswordform{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.error{
+    background-color: orange;
+    padding: 2px 5px;
+    border-radius: 5px;
+}

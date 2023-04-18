@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Rajdhani', sans-serif;
+    
+
+}
+
+.heading{
+    font-size: 70px;
+    color: #0b5ed7;
+}
+.head{
+
+    font-size: 50px;
+    color: #ebc34d;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.input{
+    padding:10px;
+    margin: 10px 0px;
+    background-color: #bdd7f0;
+    border-radius: 5px;
+    outline: none;
+    border: 2px;
+    
+
+    
+}
+
+.submit{
+    padding:10px;
+
+    margin: 30px 0px;
+    background-color: #ffc107;
+    border-radius: 5px;
+    outline: none;
+    border: 2px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 20px;
+
+}
+
+.error{
+    
+    background-color: #f0d3bd;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success{
+    background-color: #bdf0c3;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
